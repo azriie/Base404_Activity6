@@ -1,0 +1,40 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flex-container{
+    margin-top: 50px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+.flex-item {
+    background: white;
+    padding: 110px;
+    margin: 10px;
+   
+}
+
+/* Media query when the screen sice is below 600px */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        background-color: aliceblue;
+
+    }
+
+    .flex-item {
+        flex: 0 1 100%;
+        padding: 110px;
+        margin: 10px;
+    }
+}
